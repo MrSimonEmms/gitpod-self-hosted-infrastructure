@@ -1,0 +1,24 @@
+tasks:
+  - name: Install Terraform
+    init: |
+      brew install helm kubectl terraform-docs tfenv yq
+      npm i -g markdown-toc
+      tfenv install
+      tfenv use latest
+
+      echo 'source <(kubectl completion bash)' >>~/.bashrc
+      echo 'source <(helm completion bash)' >>~/.bashrc
+
+      # KOTS
+      curl https://kots.io/install | bash
+      echo 'source <(kubectl kots completion bash)' >>~/.bashrc
+    command: terraform init
+vscode:
+  extensions:
+    - HashiCorp.terraform
+    - EditorConfig.EditorConfig
+    - donjayamanne.githistory
+    - octref.vetur
+ports:
+  - port: 8800
+    visibility: private
