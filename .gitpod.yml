@@ -12,6 +12,9 @@ tasks:
       # KOTS
       curl https://kots.io/install | bash
       echo 'source <(kubectl kots completion bash)' >>~/.bashrc
+
+      # Azure CLI
+      curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
     command: terraform init
 vscode:
   extensions:
