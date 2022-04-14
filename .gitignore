@@ -30,3 +30,4 @@ override.tf.json
 # example: *tfplan*
 tmp
 *.airgap
+infrastructure/_template/README.md
