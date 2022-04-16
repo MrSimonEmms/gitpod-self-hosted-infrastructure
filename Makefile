@@ -21,6 +21,10 @@ format:
 	terraform fmt -recursive .
 .PHONY: format
 
+gcp:
+	terraform apply -var cloud=gcp
+.PHONY: gcp
+
 kubeconfig:
 	mkdir -p ~/.kube
 	terraform output -json kubeconfig | jq -r > ~/.kube/config

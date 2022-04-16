@@ -1,6 +1,6 @@
-# Infrastructure
+# GCP
 
-Provision infrastructure to deploy a Gitpod instance
+GCP provider for Gitpod testing
 
 <!-- toc -->
 
@@ -27,10 +27,7 @@ No providers.
 
 ## Modules
 
-| Name | Source | Version |
-|------|--------|---------|
-| <a name="module_azure"></a> [azure](#module\_azure) | ./azure | n/a |
-| <a name="module_provider"></a> [provider](#module\_provider) | ./gcp | n/a |
+No modules.
 
 ## Resources
 
@@ -40,19 +37,18 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_azure_location"></a> [azure\_location](#input\_azure\_location) | n/a | `any` | n/a | yes |
-| <a name="input_cloud"></a> [cloud](#input\_cloud) | n/a | `any` | n/a | yes |
-| <a name="input_dns_enabled"></a> [dns\_enabled](#input\_dns\_enabled) | n/a | `any` | n/a | yes |
+| <a name="input_dns_enabled"></a> [dns\_enabled](#input\_dns\_enabled) | Common variables | `any` | n/a | yes |
 | <a name="input_domain_name"></a> [domain\_name](#input\_domain\_name) | n/a | `any` | n/a | yes |
 | <a name="input_enable_airgapped"></a> [enable\_airgapped](#input\_enable\_airgapped) | n/a | `any` | n/a | yes |
 | <a name="input_enable_external_database"></a> [enable\_external\_database](#input\_enable\_external\_database) | n/a | `any` | n/a | yes |
 | <a name="input_enable_external_registry"></a> [enable\_external\_registry](#input\_enable\_external\_registry) | n/a | `any` | n/a | yes |
 | <a name="input_enable_external_storage"></a> [enable\_external\_storage](#input\_enable\_external\_storage) | n/a | `any` | n/a | yes |
-| <a name="input_gcp_project"></a> [gcp\_project](#input\_gcp\_project) | n/a | `any` | n/a | yes |
-| <a name="input_gcp_region"></a> [gcp\_region](#input\_gcp\_region) | n/a | `any` | n/a | yes |
-| <a name="input_gcp_use_preemptible_nodes"></a> [gcp\_use\_preemptible\_nodes](#input\_gcp\_use\_preemptible\_nodes) | n/a | `any` | n/a | yes |
+| <a name="input_labels"></a> [labels](#input\_labels) | n/a | `any` | n/a | yes |
 | <a name="input_name_format"></a> [name\_format](#input\_name\_format) | n/a | `any` | n/a | yes |
 | <a name="input_name_format_global"></a> [name\_format\_global](#input\_name\_format\_global) | n/a | `any` | n/a | yes |
+| <a name="input_preemptible_nodes"></a> [preemptible\_nodes](#input\_preemptible\_nodes) | Provider-specific variables | `any` | n/a | yes |
+| <a name="input_project"></a> [project](#input\_project) | n/a | `any` | n/a | yes |
+| <a name="input_region"></a> [region](#input\_region) | n/a | `any` | n/a | yes |
 | <a name="input_workspace_name"></a> [workspace\_name](#input\_workspace\_name) | n/a | `any` | n/a | yes |
 
 ## Outputs
@@ -61,7 +57,6 @@ No resources.
 |------|-------------|
 | <a name="output_cert_manager_issuer"></a> [cert\_manager\_issuer](#output\_cert\_manager\_issuer) | n/a |
 | <a name="output_cert_manager_secret"></a> [cert\_manager\_secret](#output\_cert\_manager\_secret) | n/a |
-| <a name="output_cert_manager_settings"></a> [cert\_manager\_settings](#output\_cert\_manager\_settings) | n/a |
 | <a name="output_cluster_name"></a> [cluster\_name](#output\_cluster\_name) | n/a |
 | <a name="output_database"></a> [database](#output\_database) | n/a |
 | <a name="output_domain_nameservers"></a> [domain\_nameservers](#output\_domain\_nameservers) | n/a |

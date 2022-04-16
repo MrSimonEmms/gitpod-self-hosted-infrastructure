@@ -55,6 +55,9 @@ No resources.
 | <a name="input_enable_external_database"></a> [enable\_external\_database](#input\_enable\_external\_database) | If supported by the cloud provider, use an external database | `bool` | `true` | no |
 | <a name="input_enable_external_registry"></a> [enable\_external\_registry](#input\_enable\_external\_registry) | If supported by the cloud provider, use an external registry | `bool` | `true` | no |
 | <a name="input_enable_external_storage"></a> [enable\_external\_storage](#input\_enable\_external\_storage) | If supported by the cloud provider, use an external storage | `bool` | `true` | no |
+| <a name="input_gcp_project"></a> [gcp\_project](#input\_gcp\_project) | GCP project name | `string` | `null` | no |
+| <a name="input_gcp_region"></a> [gcp\_region](#input\_gcp\_region) | Region to deploy the infrastructure to | `string` | `null` | no |
+| <a name="input_gcp_use_preemptible_nodes"></a> [gcp\_use\_preemptible\_nodes](#input\_gcp\_use\_preemptible\_nodes) | Use preemptible nodes for the Kubernetes clusters | `bool` | `true` | no |
 
 ## Outputs
 

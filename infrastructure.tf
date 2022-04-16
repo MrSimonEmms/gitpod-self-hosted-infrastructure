@@ -15,4 +15,8 @@ module "infrastructure" {
 
   // Cloud-specific variables
   azure_location = var.azure_location
+
+  gcp_use_preemptible_nodes = var.gcp_use_preemptible_nodes
+  gcp_project               = var.gcp_project
+  gcp_region                = var.gcp_region
 }
